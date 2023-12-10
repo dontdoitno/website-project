@@ -1,0 +1,625 @@
+/*
+montserrat 300 400 500 600 700
+Montserrat Alternates 600
+orbitron 400 600 700
+*/
+
+/* montserrat-300 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-regular - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-500 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-700 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v26-cyrillic_latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* montserrat-alternates-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-alternates-v17-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-alternates-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/montserrat-alternates-v17-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* ibm-plex-mono-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ibm-plex-mono-v19-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* ibm-plex-mono-500 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/ibm-plex-mono-v19-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* ibm-plex-mono-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'IBM Plex Mono';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/ibm-plex-mono-v19-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, ::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #F8F8F9;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.2;
+    color: black;
+}
+
+.wrapper {
+    max-width: 1440px;
+}
+
+/* header styles start */
+
+.header {
+    background-color: #F8F8F9;
+}
+
+.header__nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+}
+
+.header__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item {
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.header__item__search {
+    margin-right: 28px;
+    margin-top: 20px;
+}
+
+.header__item:last-child {
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.header__link {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.23100000619888306px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.header__link:hover, .header__link:active, .header__link:focus {
+    opacity: .55;
+}
+
+/* header styles end */
+
+/* banner styles start */
+
+.banner {
+    max-height: 116px;
+    background-color: white;
+}
+
+.banner__wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.banner__text {
+    flex-grow: 1;
+  }
+
+.banner__text ul {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+.banner__text li {
+    margin-right: 30px;
+}
+
+.banner__logo {
+    margin-left: 42px;
+}
+
+.banner__logo__img {
+    max-width: 137px;
+    max-height: 87px;
+    flex-shrink: 0;
+}
+
+.banner__person {
+    margin-right: 50px;
+}
+
+.banner__person:active, .banner__person:hover, .banner__person:focus {
+    opacity: 0.55;
+}
+
+.banner__text__bold {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29.001px; /* 138.1% */
+    letter-spacing: 0.231px;
+}
+
+.banner__text__italic {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29.001px; /* 138.1% */
+    letter-spacing: 0.231px;
+    transform: skew(-27deg);
+}
+/* banner styles end */
+
+/* info styles start */
+
+.info__wrapper {
+    max-height: 45px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-shrink: 0;
+}
+
+.info__text {
+    color: rgba(0, 115, 250, 0.47);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29.001px; /* 207.15% */
+    letter-spacing: 0.231px;
+}
+
+/* info styles end */
+
+/* mainpage styles start */
+
+.mainpage__wrapper {
+    height: 761px;
+    background: white url(../img/mainpage.png) no-repeat right;
+    margin-bottom: 20px;
+}
+
+.mainpage__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-right: 712px;
+    padding-top: 207px;
+}
+
+.mainpage__date {
+    display: flex;
+    text-align: right;
+    color: #FA1583;
+    font-family: 'IBM Plex Mono';
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29.001px; /* 93.552% */
+    letter-spacing: 0.231px;
+    transform: skew(-17deg);
+    margin-bottom: 20px;
+}
+
+.mainpage__text h1 {
+    max-width: 335px;
+    color: #000;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.mainpage__sales {
+    color: #FA1583;
+    text-align: right;
+    font-family: 'IBM Plex Mono';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    transform: skew(-17deg);
+    margin-bottom: 20px;
+}
+
+.mainpage__assort {
+    color: #000;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29.001px; /* 103.575% */
+    letter-spacing: 0.231px;
+    margin-bottom: 20px;
+}
+
+/* mainpage styles end */
+
+/* three cards styles start */
+
+.three__cards__wrapper {
+    min-height: 680px;
+    flex-shrink: 0;
+    background: center rgba(153, 194, 244, 0.47);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.card__sales {
+    display: flex;
+    position: relative;
+    width: 369px;
+    height: 340px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.card__sale__amount {
+    width: 134px;
+    height: 49px;
+    flex-shrink: 0;
+    background-color: #FA1583;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 2;
+    top: 18px;
+    left: 19px;
+}
+
+.card__sale__text {
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    color: #FFFEFE;
+    font-family: 'IBM Plex Mono';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.favorite {
+    position: absolute;
+    top: 24px;
+    left: 320px;
+}
+
+.ps5 {
+    max-width: 251px;
+    max-height: 239.41px;
+    position: absolute;
+    z-index: 1;
+    top: 13px;
+    left: 48px;
+}
+
+.card__name {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23.001px;
+    max-width: 220px;
+    /* height: 112px; */
+    position: absolute;
+    top: 272px;
+    left: 19px;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    text-decoration: none;
+}
+
+.card__prices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 272px;
+    left: 261px;
+    z-index: 3;
+}
+
+.card__old__price {
+    color: #000;
+    font-family: 'IBM Plex Mono';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.001px;
+    text-decoration: line-through #FA1583 2px;
+    z-index: 3;
+}
+
+.card__new__price {
+    color: #FA1583;
+    font-family: 'IBM Plex Mono';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.001px;
+}
+
+.gamepad {
+    max-width: 251px;
+    max-height: 239.41px;
+    position: absolute;
+    z-index: 1;
+    top: 53px;
+    left: 59px;
+}
+
+.card__name:active, .card__name:hover, .card__name:focus {
+    opacity: .55;
+}
+
+/* three cards styles end */
+
+/* sale page styles start */
+
+.sale__page__wrapper {
+    background: url(../img/sale.png) no-repeat;
+    background-size: cover;
+    min-width: 1396px;
+    min-height: 680px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sale__page__text {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat Alternates;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.231px;
+}
+
+.sale__page__text_upto {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80.001px;
+    letter-spacing: 0.231px;
+}
+
+/* sale page styles end */
+
+/* catalogue styles start */
+
+.catalogue__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card__item {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.card__sales {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.catalogue__wrapper {
+    min-height: 1500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    background-color: rgba(153, 194, 244, 0.47);;
+}
+
+.card__item {
+    display: flex;
+    position: relative;
+    width: 369px;
+    height: 340px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.card__price {
+    color: #000;
+    font-family: 'IBM Plex Mono';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.001px;
+    position: absolute;
+    top: 295px;
+    left: 261px;
+    z-index: 3;
+}
+
+.pink_gamepad {
+    width: 254.279px;
+    height: 245.589px;
+    margin-left: 49px;
+    margin-top: 45px;
+}
+
+.docstation {
+    width: 245.477px;
+    height: 186.411px;
+    margin-top: 75px;
+    margin-left: 58px;
+}
+
+.blue_gamepad {
+    width: 245.477px;
+    height: 184.438px;
+    margin-top: 65px;
+    margin-left: 58px;
+}
+
+.wheel {
+    width: 303.178px;
+    height: 183.452px;
+    margin-top: 40px;
+    margin-left: 17px;
+}
+
+.white_gamepad {
+    width: 245.477px;
+    height: 236.13px;
+    margin-top: 43px;
+    margin-left: 67px;
+}
+
+.white_headphones {
+    width: 201px;
+    height: 209px;
+    margin-top: 25px;
+    margin-left: 61px;
+}
+
+.bw_headphones {
+    width: 245.477px;
+    height: 228.915px;
+    margin-top: 23px;
+    margin-left: 52px;
+}
+
+.black_headphones {
+    width: 245.477px;
+    height: 228.915px;
+    margin-top: 23px;
+    margin-left: 52px;
+}
+
+.vr {
+    width: 277.751px;
+    height: 191.233px;
+    margin-top: 54px;
+    margin-left: 38px;
+}
+
+.red_case {
+    width: 245.477px;
+    height: 228.915px;
+    margin-top: 36px;
+    margin-left: 42px;
+}
+
+.charger {
+    width: 245.477px;
+    height: 228.915px;
+    margin-top: 30px;
+    margin-left: 57px;
+}
+
+.logitech {
+    width: 180.929px;
+    height: 174.978px;
+    margin-top: 54px;
+    margin-left: 93px;
+}
+
+/* catalogue styles end */
